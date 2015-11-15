@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>My Bag is not a Bullet Case</title>
+	<meta name="description" content="A game where you play as a OFW.">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/custom.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+	<div class="container">
+
+	</div>
+	<div class="container">
+
+			<aside class="three columns">
+				<h1 class="remove-bottom" style="margin-top: 40px">My Bag is not a Bullet Case</h1>
+				<p>Version 1.0</p>
+				&diam;
+				<ul style="margin-top: 20px;">
+					<li><a href="http://gamejolt.com/games/my-bag-is-not-a-bullet-case/107098">Windows/Mac/Linux</a></li>
+				</ul>
+				&diam;
+				<ul style="margin-top: 20px;">
+					<li><a href="#intro" id="m-intro" target="_self" style="color: rgb(102, 102, 102);">Story</a></li>
+					<li><a href="#screenshots" id="m-screenshots" target="_self" style="color: rgb(102, 102, 102);">Screenshots</a></li>
+					<li><a href="#creators" id="m-creators" target="_self" style="color: rgb(102, 102, 102);">Credits</a></li>
+				</ul>
+			</aside>
+
+		<div id="content" class="twelve columns">
+			<div class="twelve columns" style="text-align: center;">
+				<img width="700px" src="./images/title.jpg"></img>
+			</div>
+			<div class="twelve columns">
+				<hr />
+				<h3 id="intro">Story</h3>
+				<p>
+					A short VN about an OFW about to leave the Philippines.
+				</p>
+				<p>
+					<em>Note: The game is written in Filipino. Because there is enough games written in English already.</em>
+				</p>
+			</div>
+			<div class="twelve columns">
+				<hr />
+				<h3 id="statement"></h3>
+				<p>
+					We had two goals when we set out to make this:
+					<ol>
+						<li>
+						to make a horror game that does not rely on jumpscares
+						</li>
+						<li>
+						to make a "news game" that is deeper than a simple action game.
+						</li>
+					</ol>
+				</p>
+			</div>
+			<div class="twelve columns">
+				<hr />
+				<h3 id="screenshots">Screenshots</h3>
+
+				<div style="margin-bottom: 20px;">
+					<ul>
+						<li><a href="./images/screen-a.jpg"><img class="three columns" src="./images/screen-a.jpg"></img></a></li>
+						<li><a href="./images/screen-b.jpg"><img class="three columns" src="./images/screen-b.jpg"></img></a></li>
+						<li><a href="./images/screen-c.jpg"><img class="three columns" src="./images/screen-c.jpg"></img></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="twelve columns">
+				<hr />
+				<h3 id="creators">Credits</h3>
+				<p>My Bag is not a Bullet Case was created in 48 hours for Asylum Jam 2015 by <a href="http://twitter.com/tusongtupa">Julius Cebreros</a> and <a href="http://jeanambait.com">Jean Ambait</a>.</p>
+				<p>We do not own any of the images we used in the game.</p>
+				<hr />
+			</div>
+		</div>
+
+
+
+
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(window).scroll( function() {
+		checkVis("intro");
+		checkVis("screenshots");
+		checkVis("creators");
+	} );
+
+	function checkVis(elem)
+	{
+		if( isVis( "#"+elem ) ) $("#m-"+elem).css("color","#000"); else $("#m-"+elem).css("color","#666");
+	}
+
+	function isVis(elem)
+	{
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+
+		var elemTop = $(elem).offset().top;
+		var elemBottom = elemTop + $(elem).height();
+
+		return ( (elemBottom >= docViewTop && elemBottom <= docViewBottom) || (elemTop <= docViewBottom && elemTop >= docViewTop) || (elemTop <= docViewTop && elemBottom >= docViewBottom) );
+	}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37094873-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
